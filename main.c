@@ -1,19 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
 int main(void) {
-	int area,base, altura;	
+	double moedaReais,calculoConversao;
 	
-	printf("Digite a base do triangulo: ");
-	scanf("%d",&base);
+	printf("Digite a quantidade de R$ que voce quer converter para euro: ");
+	scanf("%lf",&moedaReais);
 	
-	printf("Digite a altura do triangulo: ");
-	scanf("%d",&altura);
+	calculoConversao = moedaReais / 5.71;
 	
-	area = (base * altura) / 2 ;
-	
-	printf("a area do triangulo e = %d ", area);
+	printf("A quantidade de euros e = %f ",calculoConversao);
 	printf("\n");
-	system("pause");	
+	
+	system("pause");
+	
 	return 0;
 }
